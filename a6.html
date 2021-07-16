@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decolonize Design</title>
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+
+
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-size: 10px;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      width: 90%;
+      /* height: 960px; */
+      min-width: 1258.19px;
+      /* 1382.4px */
+      background-color: #E0D3F1;
+    }
+
+    a {
+      text-decoration: none;
+      color: #222222;
+    }
+
+    header>.inner .header__top>a {
+      color: #0B1BA8;
+    }
+
+    .inner {}
+
+    header {
+      text-align: center;
+      width: 100%;
+      min-width: 1258.19px;
+      height: calc(960px*0.2);
+      /* 192px */
+      background-color:darkorange;
+      font-family: 'Homemade Apple', cursive;
+      font-size: 8rem;
+    }
+
+    header>.inner {}
+
+    header>.inner .header__top {
+      height: calc(192px*0.6);
+      background-color:darkturquoise;
+      line-height: 115.2px;
+      padding: 0 40px;
+      transition: all .4s;
+    }
+
+    header>.inner .header__top>a:hover {
+      color: #63F869;
+    }
+
+    header>.inner .header__menu {
+      font-family: 'Vidaloka', serif;
+      color:indigo;
+      font-size: 2rem;
+      align-items: center;
+    }
+
+    header>.inner .header__menu ul.main-menu {
+      width: 100%;
+      height: calc(192px*0.4);
+      /* background-color:coral; */
+      position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    header>.inner .header__menu ul.main-menu li {
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+      /* background-color:antiquewhite; */
+      margin-top: 25px;
+      transition: all .2s;
+      letter-spacing: 2px;
+    }
+
+    header>.inner .header__menu ul.main-menu li:hover>a {
+      color: #63F869;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(6)>a {
+      pointer-events: none;
+      color: #0B1BA8;
+    }
+
+    /* pointer-events: none; */
+    header>.inner .header__menu ul.main-menu li:hover {
+      border-bottom: 3px solid #63F869;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(6):hover {
+      border-bottom: 0;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(-n+3) {
+      margin-top: 15px;
+      margin-left: 20px;
+      margin-right: 15px;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(n+4):nth-child(-n+6) {
+      margin-left: -10px;
+      margin-right: 10px;
+    }
+
+    /*header end  */
+    section {
+      width: 100%;
+      height: calc(960px*0.7);
+      background-color:indigo;
+    }
+
+    section>.inner>.container {
+      margin: 0 auto;
+      width: 80%;
+      height: calc(960px*0.7);
+      /* background-color: bisque; */
+    }
+
+    section>.inner>.container h1 {
+      text-align: center;
+      font-size: 4.6rem;
+      padding-top: 50px;
+      font-family: 'Space Mono', monospace;
+      color: cornflowerblue;
+    }
+
+
+    section>.inner>.container h2 {
+      font-size: 3.4rem;
+      padding-top: 20px;
+      font-family: 'Vidaloka', serif;
+      color: cornflowerblue;
+    }
+
+    section>.inner>.container h1:first-child {
+      padding-top: 35px;
+    }
+
+    section>.inner>.container p {
+      font-size: 2rem;
+      padding: 15px;
+      line-height: 30px;
+      font-family: 'Mandali', sans-serif;
+      color: cyan;
+    }
+
+    footer {
+      width: 100%;
+      height: calc(960px*0.1);
+      background-color:deeppink;
+    }
+
+    footer h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+      line-height: calc(960px*0.1);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="inner inner--header">
+        <div class="header__top"><a href="/">AIGA</a></div>
+        <div class="header__menu">
+          <ul class="main-menu">
+            <li><a href="./a1.html">Copyright Law
+                for Designers</a></li>
+            <li><a href="./a2.html">Self-Isolartion for Creatives</a></li>
+            <li><a href="./a3.html">Computer Game Design</a></li>
+
+            <li><a href="./a4.html">Optical Illusion</a></li>
+            <li><a href="./a5.html">Cartography</a></li>
+            <li><a href="./a6.html">Decolonize Design</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- inner end -->
+    </header>
+
+    <section>
+      <div class="inner inner--section">
+        <div class="container">
+          <h1>What Does It Mean to Decolonize Design?
+          </h1>
+          <p>
+            To understand the place of decolonization within design, it’s vital to first get our terms straight.
+            “Colonization” is rooted in indigenous peoples’ experiences of oppression—specifically, the seizure of
+            native resources, as well as the embedding of Western ideology into society. The word “decolonization” was
+            originally used to describe the withdrawal of a state from a former colony. Now, decolonization has come to
+            represent a whole host of ideas: It’s an acknowledgement that in the West, society has been built upon the
+            colonization of other nations, that we exist within a system of privilege and oppression, and that a lot of
+            the culture we’ve come to see as ours has actually been appropriated or stolen.
+
+
+          </p>
+          <h2 class="h2-2">Decolonizing Design History</h2>
+          <p class="p-1">
+            The work designers make is inspired by taste, and taste is often derived from what we’re exposed to during
+            our upbringing. But design values and history is taught through a canon; that accepted pantheon of work by
+            predominantly European and American male designers that sets the basis for what is deemed “good” or “bad.”
+            The authority of the canon has undermined the work produced by non-Western cultures and those from poorer
+            backgrounds so that Ghanaian textiles, for example, get cast as craft rather than design.
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="inner inner--footer">
+        <h1>
+          © 2021 AIGA
+          Terms & Conditions
+          Beta User Testing</h1>
+      </div>
+    </footer>
+
+    <!-- wrapper end -->
+
+</body>
+
+</html>

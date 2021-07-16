@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Isolration for Creatives</title>
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-size: 10px;
+      background-color: #222222;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      width: 90%;
+      min-width: 1258.19px;
+      /* 1382.4px */
+      background-color: #E0D3F1;
+    }
+
+    a {
+      text-decoration: none;
+      color: #222222;
+    }
+
+    .header-top-text {
+      color: #961818;
+    }
+
+    .inner {}
+
+    header {
+      color: #961818;
+      text-align: end;
+      width: 100%;
+      min-width: 1258.19px;
+      height: calc(960px*0.2);
+      /* 192px */
+      background-color: #F99985;
+      font-family: 'Alfa Slab One', cursive;
+      font-size: 8rem;
+    }
+
+    header>.inner {}
+
+    header>.inner .header__top {
+      height: calc(192px*0.6);
+      background-color: #FF8159;
+      line-height: 115.2px;
+      padding: 0 40px;
+      transition: all .4s;
+    }
+
+    header>.inner .header__top>a:hover {
+      color: #63F869;
+    }
+
+    header>.inner .header__menu {
+      font-family: 'Acme', sans-serif;
+      color: #222222;
+      font-size: 2rem;
+      align-items: center;
+      letter-spacing: 3px;
+      line-height: 25px;
+    }
+
+    header>.inner .header__menu ul.main-menu {
+      width: 100%;
+      height: calc(192px*0.4);
+      /* background-color:coral; */
+      position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    header>.inner .header__menu ul.main-menu li {
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+      /* background-color:antiquewhite; */
+      margin-top: 25px;
+      transition: all .2s;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(2) >a{
+      pointer-events: none;
+      color: #0B1BA8;
+     }
+    header>.inner .header__menu ul.main-menu li:hover>a {
+      color: #63F869;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(2):hover>a {
+      pointer-events: none;
+      color: #0B1BA8;
+     }
+
+    header>.inner .header__menu ul.main-menu li:hover {
+      border-bottom: 3px solid #63F869;
+    }
+    header>.inner .header__menu ul.main-menu li:nth-child(2):hover {
+      border-bottom: 0;
+     }
+    header>.inner .header__menu ul.main-menu li:nth-child(-n+3) {
+      margin-top: 15px;
+      margin-left: 20px;
+      margin-right: 15px;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(n+4):nth-child(-n+6) {
+      margin-left: -10px;
+      margin-right: 10px;
+    }
+
+    /*header end  */
+    section {
+      width: 100%;
+      height: calc(960px*0.7);
+      background-color: #FFE3CF;
+    }
+
+    section>.inner>.container {
+      margin: 0 auto;
+      width: 80%;
+      height: calc(960px*0.7);
+      /* background-color: bisque; */
+    }
+
+    section>.inner>.container h1 {
+      text-align: center;
+      font-size: 4.6rem;
+      padding-top: 20px;
+      font-family: 'Permanent Marker', cursive;
+      color: #961818;
+    }
+
+
+    section>.inner>.container h2 {
+      font-size: 3.4rem;
+      padding-top: 20px;
+      font-family: 'Zilla Slab', serif;
+      color: #961818;
+    }
+
+    section>.inner>.container h1:first-child {
+      padding-top: 35px;
+    }
+
+    section>.inner>.container p {
+      font-size: 2rem;
+      padding: 15px;
+      line-height: 30px;
+      font-family: 'Courgette', cursive;
+      color: #47115A;
+    }
+
+    section>.inner>.container > p.p-1 {
+      font-size: 1.6rem;
+      padding: 15px;
+      line-height: 25px;
+      font-family: 'Courgette', cursive;
+      color: #47115A;
+    }
+
+    footer {
+      width: 100%;
+      height: calc(960px*0.1);
+      background-color: #821F00;
+    }
+
+    footer h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+      line-height: calc(960px*0.1);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="inner inner--header">
+        <div class="header__top"><a href="/" class="header-top-text">AIGA</a></div>
+        <div class="header__menu">
+          <ul class="main-menu">
+            <li><a href="./a1.html">Copyright Law
+                for Designers</a></li>
+            <li><a href="./a2.html">Self-Isolartion for Creatives</a></li>
+            <li><a href="./a3.html">Computer Game Design</a></li>
+
+            <li><a href="./a4.html">Optical Illusion</a></li>
+            <li><a href="./a5.html">Cartography</a></li>
+            <li><a href="./a6.html">Decolonize Design</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- inner end -->
+    </header>
+
+    <section>
+      <div class="inner inner--section">
+        <div class="container">
+          <h1>The Eye on Design Guide to Self-isolation for Designers and Creatives</h1>
+          <p>
+            From our respective home offices, we’ve been scanning the web over the past few days to collect tips and
+            resources for designers, illustrators, and self-employed creatives during the Covid-19 outbreak. While it’s
+            a scary time, it’s also heartening to see so many projects, initiatives, Zoom meet-ups, and open-source
+            Google docs organized by the design community to keep spirits high and money flowing.
+
+            Below, you’ll find our selection of tips for supporting and nourishing the creative community, finding
+            remote jobs, working from home, and generally keeping your sanity while social distancing at home. Please
+            feel free to add your own tips and resources for fellow designers, illustrators, and creatives to our
+            open-source Google document. Stay safe everyone
+          </p>
+          <h2 class="h2-2">Support freelance artists, small presses, booksellers, small type foundries.</h2>
+          <p class="p-1">
+            TSupport independent foundries, and discover new, cutting-edge fonts. We love getting lost in the list of
+            indie foundries on Type.lol.
+            Purchase fonts-in-progress and nurture the practices of up-and-coming type designers and students via the
+            platform Future Fonts.
+            Get under a blanket and order a bundle of alternative comics from publishers like Breakdown Press, Nieves
+            Books, Samandal, and Koyama Press.
+            With Printed Matter’s Los Angeles Art Book Fair and other book fairs cancelled, now is the time to order a
+            stack of tomes from your most beloved design presses. We’ve just stocked up from Occasional Papers, Drawdown
+            Books, Co-Co Press, Primary Information, Inventory Press, and Spector Books. Counter Print is offering to
+            send customers videos of books they’re interested in.
+           
+          </p>
+
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="inner inner--footer">
+        <h1>
+          © 2021 AIGA
+          Terms & Conditions
+          Beta User Testing</h1>
+      </div>
+    </footer>
+
+    <!-- wrapper end -->
+
+</body>
+
+</html>

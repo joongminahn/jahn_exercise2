@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Game Design</title>
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Orbitron:wght@500&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+
+  <style>
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-size: 10px;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      width: 90%;
+      min-width: 1258.19px;
+      /* 1382.4px */
+      background-color: #E0D3F1;
+    }
+
+    a {
+      text-decoration: none;
+      color: #222222;
+    }
+
+    .inner {}
+
+    header {
+      text-align: center;
+      width: 100%;
+      min-width: 1258.19px;
+      height: calc(960px*0.2);
+      /* 192px */
+      background-color: #CAE5FF;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 8rem;
+    }
+
+    header>.inner {}
+
+    header>.inner .header__top {
+      height: calc(192px*0.6);
+      background-color: #E884F9;
+      line-height: 115.2px;
+      padding: 0 40px;
+      transition: all .4s;
+    }
+
+    header>.inner .header__top>a:hover {
+      color: #63F869;
+    }
+
+    header>.inner .header__menu {
+      font-family: 'Cuprum', sans-serif;
+      color: #222222;
+      font-size: 2rem;
+      align-items: center;
+    }
+
+    header>.inner .header__menu ul.main-menu {
+      width: 100%;
+      height: calc(192px*0.4);
+      /* background-color:coral; */
+      position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    header>.inner .header__menu ul.main-menu li {
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+      /* background-color:antiquewhite; */
+      margin-top: 25px;
+      transition: all .2s;
+      letter-spacing: 2px;
+    }
+
+    header>.inner .header__menu ul.main-menu li:hover>a {
+      color: #63F869;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(3)>a {
+      pointer-events: none;
+      color: #0B1BA8;
+    }
+
+    /* pointer-events: none; */
+    header>.inner .header__menu ul.main-menu li:hover {
+      border-bottom: 3px solid #63F869;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(3):hover {
+      border-bottom: 0;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(-n+3) {
+      margin-top: 15px;
+      margin-left: 20px;
+      margin-right: 15px;
+    }
+
+    header>.inner .header__menu ul.main-menu li:nth-child(n+4):nth-child(-n+6) {
+      margin-left: -10px;
+      margin-right: 10px;
+    }
+
+    /*header end  */
+    section {
+      width: 100%;
+      height: calc(960px*0.7);
+      background-color: #E0D3F1;
+    }
+
+    section>.inner>.container {
+      margin: 0 auto;
+      width: 80%;
+      height: calc(960px*0.7);
+      /* background-color: bisque; */
+    }
+
+    section>.inner>.container h1 {
+      text-align: center;
+      font-size: 4.6rem;
+      padding-top: 20px;
+      font-family: 'Cuprum', sans-serif;
+    }
+
+
+    section>.inner>.container h2 {
+      font-size: 3.4rem;
+      padding-top: 20px;
+      font-family: 'Zilla Slab', serif;
+    }
+
+    section>.inner>.container h1:first-child {
+      padding-top: 35px;
+    }
+
+    section>.inner>.container p {
+      font-size: 2rem;
+      padding: 15px;
+      line-height: 30px;
+      font-family: 'Exo 2', sans-serif;
+      color: #47115A;
+    }
+
+    footer {
+      width: 100%;
+      height: calc(960px*0.1);
+      background-color: #713A84;
+    }
+
+    footer h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+      line-height: calc(960px*0.1);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="inner inner--header">
+        <div class="header__top"><a href="/">AIGA</a></div>
+        <div class="header__menu">
+          <ul class="main-menu">
+            <li><a href="./a1.html">Copyright Law
+                for Designers</a></li>
+            <li><a href="./a2.html">Self-Isolartion for Creatives</a></li>
+            <li><a href="./a3.html">Computer Game Design</a></li>
+
+            <li><a href="./a4.html">Optical Illusion</a></li>
+            <li><a href="./a5.html">Cartography</a></li>
+            <li><a href="./a6.html">Decolonize Design</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- inner end -->
+    </header>
+
+    <section>
+      <div class="inner inner--section">
+        <div class="container">
+          <h1>Roberta Williams Is the World’s First Graphic Computer Game Designer</h1>
+          <p>
+            If you’re a computer programmer or digital designer over the age of 40, this is probably how the future
+            began for you. Two simple sentences and a cursor, blinking like a heartbeat, waiting for your command. To
+            anyone else, it might read more like the beginning of an odd and boring story, but the format will be
+            familiar to all those who have ever dabbled in microcomputing. It was the same way all text-based computer
+            games started: a bare-bones setup and an invitation to venture forth, uncover the clues, and win the game.
+            But it wasn’t just the text, flashing on the screen of an 8-bit Apple II that shot out like a siren call
+            from the wild—it was the graphics. They were monochrome, ridiculously rudimentary, and they blew everyone
+            away.
+          </p>
+          <h2 class="h2-2">At the time, I don’t think we had much more strategy than just to have fun.</h2>
+          <p class="p-1">
+            The Williamses hired more people, designers, coders, programmers. The company was growing fast, and Sierra
+            was competing for talent with other prominent game publishers headquartered in sexier locations, like
+            LucasArts, part of George Lucas’ game division in San Francisco, and Infocom just outside of Boston. Sierra,
+            on the other hand, was located in the small town of Oakhurst, with a population just around 2,000. Hot,
+            young tech stars rising in a burgeoning field weren’t likely to be attracted to a place that hadn’t seen
+            much action since the Gold Rush. Ken and Roberta had to take who they could get and hope they could be
+            trained.
+          </p>
+
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="inner inner--footer">
+        <h1>
+          © 2021 AIGA
+          Terms & Conditions
+          Beta User Testing</h1>
+      </div>
+    </footer>
+
+    <!-- wrapper end -->
+
+</body>
+
+</html>
