@@ -39,7 +39,6 @@
     .wrapper {
       margin: 0 auto;
       width: 90%;
-      min-width: 1258.19px;
       /* 1382.4px */
       background-color: #E0D3F1;
     }
@@ -47,6 +46,8 @@
     a {
       text-decoration: none;
       color: #222222;
+      letter-spacing: 1px;
+      line-height: 25px;
     }
 
     .inner {}
@@ -54,8 +55,7 @@
     header {
       text-align: start;
       width: 100%;
-      min-width: 1258.19px;
-      height: calc(960px*0.2);
+
       /* 192px */
       background-color: #A3F985;
       font-family: 'Yatra One', cursive;
@@ -65,7 +65,7 @@
     header>.inner {}
 
     header>.inner .header__top {
-      height: calc(192px*0.6);
+
       background-color: #45CB2F;
       line-height: 115.2px;
       padding: 0 40px;
@@ -85,12 +85,14 @@
 
     header>.inner .header__menu ul.main-menu {
       width: 100%;
-      height: calc(192px*0.4);
+
       /* background-color:coral; */
       position: relative;
       text-align: center;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
+
     }
 
     header>.inner .header__menu ul.main-menu li {
@@ -99,8 +101,8 @@
       width: 200px;
       /* background-color:antiquewhite; */
       margin-top: 25px;
-      transition: all .2s;
-      letter-spacing: 2px;
+      transition: all .1s;
+      padding-bottom: 6px;
     }
 
     header>.inner .header__menu ul.main-menu li:hover>a {
@@ -114,7 +116,7 @@
 
     /* pointer-events: none; */
     header>.inner .header__menu ul.main-menu li:hover {
-      border-bottom: 3px solid #63F869;
+      /* border-bottom: 3px solid #63F869; */
     }
 
     header>.inner .header__menu ul.main-menu li:nth-child(4):hover {
@@ -135,14 +137,14 @@
     /*header end  */
     section {
       width: 100%;
-      height: calc(960px*0.7);
+      /* height: calc(960px*0.7); */
       background-color: #EEFEF3;
     }
 
     section>.inner>.container {
       margin: 0 auto;
       width: 80%;
-      height: calc(960px*0.7);
+      /* height: calc(960px*0.7); */
       /* background-color: bisque; */
     }
 
@@ -234,7 +236,15 @@
           <p class="p-1">
             Tyler had studied under Béla Julesz, a famed neuroscientist known for his research of the human brain’s
             visual system. In the 1960s, Julesz pioneered the concept of the random dot stereogram, a visual trick that
-            shows how humans can achieve the sensation of stereopsis, or 3-D vision.
+            shows how humans can achieve the sensation of stereopsis, or 3-D vision. But it wasn’t until the 1970s when
+            Tyler figured out how to achieve the same 3-D effect with a single image that the roots of modern-day Magic
+            Eye were formed. Baccei was mesmerized by autostereograms as well as by the image that ran next to the story
+            in Stereo World—a black-and-white rectangle filled with what looked like TV static, but revealed a series of
+            random circles and dots when you diverged your eyes. “I thought it was the most compelling optical illusion
+            I’d ever seen,” Baccei said. He was so compelled that he decided to create his own for Pentica’s next
+            advertisement in Embedded Systems Engineering magazine.
+
+
 
         </div>
       </div>

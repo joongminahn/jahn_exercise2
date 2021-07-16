@@ -39,7 +39,7 @@
     .wrapper {
       margin: 0 auto;
       width: 90%;
-      min-width: 1258.19px;
+      /* min-width: 1258.19px; */
       /* 1382.4px */
       background-color: #E0D3F1;
     }
@@ -58,8 +58,8 @@
     header {
       text-align: start;
       width: 100%;
-      min-width: 1258.19px;
-      height: calc(960px*0.2);
+      /* min-width: 1258.19px;
+      height: calc(960px*0.2); */
       /* 192px */
       background-color: #A3F985;
       font-family: 'Sigmar One', cursive;
@@ -69,15 +69,16 @@
     header>.inner {}
 
     header>.inner .header__top {
-      height: calc(192px*0.6);
+      /* height: calc(192px*0.6); */
       background-color: #662E22;
-      line-height: 115.2px;
+      /* line-height: 115.2px; */
       padding: 0 40px;
       transition: all .4s;
     }
 
     header>.inner .header__top>a:hover {
-      color: #63F869;
+      color: #ff55cc;
+      
     }
 
     header>.inner .header__menu {
@@ -89,12 +90,13 @@
 
     header>.inner .header__menu ul.main-menu {
       width: 100%;
-      height: calc(192px*0.4);
+      /* height: calc(192px*0.4); */
       /* background-color:coral; */
       position: relative;
       text-align: center;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     header>.inner .header__menu ul.main-menu li {
@@ -105,10 +107,12 @@
       margin-top: 25px;
       transition: all .2s;
       letter-spacing: 2px;
+      padding-bottom: 20px;
     }
 
     header>.inner .header__menu ul.main-menu li:hover>a {
-      color: #63F869;
+      color: #ff55cc;
+      text-decoration: underline #ff55cc;
     }
 
     header>.inner .header__menu ul.main-menu li:nth-child(5)>a {
@@ -117,10 +121,7 @@
     }
 
     /* pointer-events: none; */
-    header>.inner .header__menu ul.main-menu li:hover {
-      border-bottom: 3px solid #63F869;
-    }
-
+   
     header>.inner .header__menu ul.main-menu li:nth-child(5):hover {
       border-bottom: 0;
     }
@@ -139,14 +140,14 @@
     /*header end  */
     section {
       width: 100%;
-      height: calc(960px*0.7);
+      /* height: calc(960px*0.7); */
       background-color: #333333;
     }
 
     section>.inner>.container {
       margin: 0 auto;
       width: 80%;
-      height: calc(960px*0.7);
+      /* height: calc(960px*0.7); */
       /* background-color: bisque; */
     }
 
@@ -168,6 +169,7 @@
 
     section>.inner>.container h1:first-child {
       padding-top: 35px;
+      padding-bottom: 30px;
     }
 
     section>.inner>.container p {
@@ -177,6 +179,11 @@
       font-family: 'Poiret One', cursive;
       color: cyan;
     }
+
+
+    section>.inner>.container .p-1 {
+      padding-bottom: 40px;
+     }
 
     footer {
       width: 100%;
